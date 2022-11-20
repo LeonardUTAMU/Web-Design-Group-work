@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Please contact us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #9D100E;
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 700px; 
+  background: #989e9c;
+  padding: 20px;
+  
+}
+
+nav ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 700px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section::after {
+  nav-down: "";
+  display: img;
+  clear: both;
+}
+
+h1 {text-align: center;}
+h2 {text-align :center}
+p {text-align: justify;}
+div {text-align: center;}
+ol {text-align : justify;}
+
+footer {
+  background-color: #9D100E;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>MEGABYTES TECHNOLOGIES (KUNGU) MATUGGA</h2>
+</header>
+
+
+<img src="internet-business-technology.jpg" alt="ICT" width="50%" height="300px"><img src="isometric-people-working-with-technology.webp" alt="ISP" width="50%" height="300px">
+<section>
+  <nav>
+    <ol>
+      <li><a href="HOME.html"><img src="Home button.PNG" alt="Home" width="60%" height="70px"></a></li>
+      <li><a href="SERVICES.html"><img src="services button.PNG" alt="Services" width="60%" height="70px"></a></li>
+      <li><a href="ABOUT US.html"><img src="About us button.PNG" alt="About us" width="60%" height="70px"></a></li>
+      <li><a href="CONTACT US.html"><img src="Contact us button.PNG" alt="Contact us" width="60%" height="70px"></a></li>
+      <li><a href="NEWS.html"><img src="News feed button.PNG" alt="News feed" width="60%" height="70px"></a></li>
+    </ol>
+    
+  </nav>
+
+  
+  <article>
+    <h1><p style="color:red;"><b>CONTACT US BELOW</b></p></h1>
+
+    <p><b>Kindly reach us through the form below and we shall be glad to get back to you</b>
+
+    <p>At Megabytes Technologies, KUNGU, we value your feedback and we shall surely return to you in due time as soon as possible</b></p>
+    
+    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+      <script type="text/javascript">
+      function ValidateForm(frm) {
+      if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+      if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+      if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+      if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+      return true; }
+      </script>
+      <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+      <tr> <td>
+      <label for="Name">Name*:</label>
+      </td> <td>
+      <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+      </td> </tr> <tr> <td>
+      <label for="PhoneNumber">Phone number:</label>
+      </td> <td>
+      <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+      </td> </tr> <tr> <td>
+      <label for="FromEmailAddress">Email address*:</label>
+      </td> <td>
+      <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+      </td> </tr> <tr> <td>
+      <label for="Comments">Comments*:</label>
+      </td> <td>
+      <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+      </td> </tr> <tr> <td>
+      * - required fields
+      </td> <td>
+      <input name="skip_Submit" type="submit" value="Submit" />
+      </table>
+      </form>
+  </article>
+</section>
+
+
+<footer> Group Three (3) Course work (2022)<b><i> all rights reserved</i></b>
+</footer>
+
+</body>
+</html>
+
